@@ -20,6 +20,3 @@ coverage/
 .competitors*
 .consumer-test*
 scratch/
-
-# Reference API (separate project)
-ethiopian-calendar-api/

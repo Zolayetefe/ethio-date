@@ -1,0 +1,58 @@
+{
+  "name": "ethio-date",
+  "version": "1.0.0",
+  "description": "Ultra-fast, zero-dependency Ethiopian ↔ Gregorian calendar date converter with strict validation and full TypeScript support.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/**/*.test.js",
+    "test:types": "tsc --noEmit",
+    "benchmark": "node benchmarks/benchmark.js",
+    "prepack": "npm run build && npm test"
+  },
+  "keywords": [
+    "ethiopian-calendar",
+    "gregorian-calendar",
+    "ethiopian-date",
+    "date-converter",
+    "ethiopia",
+    "pagume",
+    "amharic",
+    "calendar",
+    "converter",
+    "zero-dependency",
+    "typescript"
+  ],
+  "author": "Zelalem",
+  "license": "MIT",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zelalem/ethio-date.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zelalem/ethio-date/issues"
+  },
+  "homepage": "https://github.com/Zelalem/ethio-date#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

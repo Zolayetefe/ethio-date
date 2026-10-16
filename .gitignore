@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+*.tgz
+
+# Test and coverage artifacts
+coverage/
+*.log
+
+# Environment & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Temporary & test directories
+.competitors*
+.consumer-test*
+scratch/
+
+# Reference API (separate project)
+ethiopian-calendar-api/
